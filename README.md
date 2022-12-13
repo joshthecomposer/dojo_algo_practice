@@ -4,3 +4,4 @@ This repository contains all the JS files for each coding assignment
 * Arrays To Do 1 CORE Assignment
 * Strings To Do 1 CORE Assignment
 * Fronts CORE Assignment
+* Display CORE Assignment

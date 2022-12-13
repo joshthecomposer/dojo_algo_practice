@@ -32,6 +32,18 @@ class SLL {
         }
         return this.head.data
     }
+    display() {
+        let runner = this.head
+        let result = ''
+        while (runner !== null) {
+            if (runner.next === null) {
+                result += runner.data
+                return result
+            }
+            result += runner.data + ','
+            runner = runner.next
+        }
+    }
 
 }
 
@@ -41,4 +53,4 @@ list.addFront(5)
 list.addFront(73)
 list.addFront(4)
 list.removeFront(list)
-console.log(list)
+console.log(list.display())

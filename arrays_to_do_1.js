@@ -1,12 +1,13 @@
 //Push Front
-
-let pushFront = [5,7,2,3]
-i=pushFront.length
-while (i-- > 0) {
-    pushFront[i + 1] = pushFront[i]
+function pushFront(arr) {
+    i=arr.length
+    while (i-- > 0) {
+        arr[i + 1] = arr[i]
+    }
+    arr[0] = 8
+    return `pushFront() return value is ${arr}`
 }
-pushFront[0] = 8
-console.log(pushFront)
+console.log(pushFront([5,7,2,3]))
 
 function popFront(arr) {
     let r = arr[0]
